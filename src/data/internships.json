@@ -1,0 +1,1960 @@
+{
+  "categories": [
+    "All",
+    "Development",
+    "AI & Data",
+    "Design",
+    "Security",
+    "Business",
+    "Finance"
+  ],
+  "internships": [
+    {
+      "slug": "ai-ml",
+      "title": "Artificial Intelligence & Machine Learning",
+      "shortTitle": "AI & ML",
+      "category": "AI & Data",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "BrainCircuit",
+      "description": "Build practical AI and machine learning skills through guided tasks, mini-projects and portfolio-ready work.",
+      "applyLink": "",
+      "about": [
+        "This structured Artificial Intelligence & Machine Learning internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "description": "Use Python to solve practical tasks and build project logic."
+        },
+        {
+          "name": "Machine Learning",
+          "description": "Train, evaluate and interpret machine-learning models."
+        },
+        {
+          "name": "Deep Learning",
+          "description": "Understand neural-network workflows and implementation basics."
+        },
+        {
+          "name": "NLP",
+          "description": "Work with text processing and language-focused tasks."
+        },
+        {
+          "name": "RAG",
+          "description": "Build retrieval-augmented AI workflows with external knowledge."
+        },
+        {
+          "name": "GitHub",
+          "description": "Document and present your work using repositories."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Exploratory data analysis and feature preparation",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Classification model with evaluation metrics",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "NLP mini-project",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "End-to-end predictive ML system",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "AI knowledge assistant / RAG capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in AI & ML.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in AI & ML?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "data-science",
+      "title": "Data Science & Analytics",
+      "shortTitle": "Data Science",
+      "category": "AI & Data",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "BarChart3",
+      "description": "Work with real datasets, clean and analyze information, create visualizations and communicate data-backed insights.",
+      "applyLink": "",
+      "about": [
+        "This structured Data Science & Analytics internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "description": "Use Python to solve practical tasks and build project logic."
+        },
+        {
+          "name": "Pandas",
+          "description": "Clean, transform and analyze structured datasets."
+        },
+        {
+          "name": "NumPy",
+          "description": "Use numerical operations for data workflows."
+        },
+        {
+          "name": "SQL",
+          "description": "Query and organize data for analysis."
+        },
+        {
+          "name": "Visualization",
+          "description": "Communicate findings with clear visual outputs."
+        },
+        {
+          "name": "Analytics",
+          "description": "Turn data into measurable insights."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Data cleaning task",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Dashboard analysis",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "EDA mini-project",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Business insights report",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Data analytics capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Data Science.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Data Science?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "python-development",
+      "title": "Python Development",
+      "shortTitle": "Python",
+      "category": "Development",
+      "level": "Beginner Friendly",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "Code2",
+      "description": "Strengthen Python fundamentals and build practical scripts, utilities, APIs and project-based applications.",
+      "applyLink": "",
+      "about": [
+        "This structured Python Development internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Python",
+          "description": "Use Python to solve practical tasks and build project logic."
+        },
+        {
+          "name": "OOP",
+          "description": "Structure applications using object-oriented programming."
+        },
+        {
+          "name": "APIs",
+          "description": "Consume and integrate APIs into practical applications."
+        },
+        {
+          "name": "Automation",
+          "description": "Automate repetitive workflows with Python."
+        },
+        {
+          "name": "Git",
+          "description": "Track changes and follow a professional version-control workflow."
+        },
+        {
+          "name": "Problem Solving",
+          "description": "Break practical requirements into clear programming steps."
+        }
+      ],
+      "projects": [
+        {
+          "title": "CLI utility",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Automation script",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "API consumer",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Python application",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Final capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Python.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Python?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "web-development",
+      "title": "Web Development",
+      "shortTitle": "Web Development",
+      "category": "Development",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "MonitorSmartphone",
+      "description": "Design and build responsive web experiences using modern frontend development tools and deployment workflows.",
+      "applyLink": "",
+      "about": [
+        "This structured Web Development internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "HTML",
+          "description": "Build semantic page structure."
+        },
+        {
+          "name": "CSS",
+          "description": "Create responsive and polished layouts."
+        },
+        {
+          "name": "JavaScript",
+          "description": "Add interactive behavior and application logic."
+        },
+        {
+          "name": "React",
+          "description": "Build reusable component-based user interfaces."
+        },
+        {
+          "name": "GitHub",
+          "description": "Document and present your work using repositories."
+        },
+        {
+          "name": "Deployment",
+          "description": "Publish projects using modern deployment workflows."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Responsive landing page",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Interactive UI",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "React mini-app",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Portfolio website",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Production-ready capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Web Development.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Web Development?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "app-development",
+      "title": "App Development",
+      "shortTitle": "App Development",
+      "category": "Development",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "Smartphone",
+      "description": "Learn mobile app structure, screens, state, navigation and project development through hands-on tasks.",
+      "applyLink": "",
+      "about": [
+        "This structured App Development internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "UI Screens",
+          "description": "Create clear mobile application interfaces."
+        },
+        {
+          "name": "Navigation",
+          "description": "Build structured multi-screen user flows."
+        },
+        {
+          "name": "State",
+          "description": "Manage changing application data and UI state."
+        },
+        {
+          "name": "APIs",
+          "description": "Consume and integrate APIs into practical applications."
+        },
+        {
+          "name": "GitHub",
+          "description": "Document and present your work using repositories."
+        },
+        {
+          "name": "Mobile UX",
+          "description": "Design interactions suited to mobile users."
+        }
+      ],
+      "projects": [
+        {
+          "title": "UI screen build",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Navigation flow",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "API mini-app",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Utility app",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Mobile capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in App Development.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in App Development?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "cybersecurity",
+      "title": "Cybersecurity",
+      "shortTitle": "Cybersecurity",
+      "category": "Security",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "ShieldCheck",
+      "description": "Learn defensive security concepts, secure practices, risk analysis and documentation using safe lab-based exercises.",
+      "applyLink": "",
+      "about": [
+        "This structured Cybersecurity internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Security Basics",
+          "description": "Understand common defensive-security principles."
+        },
+        {
+          "name": "Risk Analysis",
+          "description": "Identify, prioritize and document security risks."
+        },
+        {
+          "name": "Web Security",
+          "description": "Learn safe web-security concepts in controlled exercises."
+        },
+        {
+          "name": "Linux",
+          "description": "Use basic Linux workflows relevant to security."
+        },
+        {
+          "name": "Documentation",
+          "description": "Record findings and recommendations clearly."
+        },
+        {
+          "name": "Secure Coding",
+          "description": "Apply safer coding and configuration practices."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Security checklist",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Risk assessment",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Safe lab analysis",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Secure configuration review",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Security capstone report",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Cybersecurity.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Cybersecurity?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "cloud-devops",
+      "title": "Cloud & DevOps",
+      "shortTitle": "Cloud & DevOps",
+      "category": "Development",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "CloudCog",
+      "description": "Understand deployment, cloud fundamentals, CI/CD concepts and modern developer operations through practical workflows.",
+      "applyLink": "",
+      "about": [
+        "This structured Cloud & DevOps internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Cloud",
+          "description": "Understand core cloud-computing concepts."
+        },
+        {
+          "name": "Git",
+          "description": "Track changes and follow a professional version-control workflow."
+        },
+        {
+          "name": "CI/CD",
+          "description": "Learn automated build and deployment workflows."
+        },
+        {
+          "name": "Docker",
+          "description": "Package applications into containers."
+        },
+        {
+          "name": "Deployment",
+          "description": "Publish projects using modern deployment workflows."
+        },
+        {
+          "name": "Monitoring",
+          "description": "Understand basic application and deployment monitoring."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Cloud deployment",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Git workflow",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "CI task",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Containerized app",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "DevOps capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Cloud & DevOps.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Cloud & DevOps?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "ui-ux-design",
+      "title": "UI/UX Design",
+      "shortTitle": "UI/UX Design",
+      "category": "Design",
+      "level": "Beginner Friendly",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "PanelsTopLeft",
+      "description": "Practice user-centered design, wireframing, interface systems and product thinking through portfolio-ready design tasks.",
+      "applyLink": "",
+      "about": [
+        "This structured UI/UX Design internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Research",
+          "description": "Study user needs before making design decisions."
+        },
+        {
+          "name": "Wireframes",
+          "description": "Plan interface structure before visual design."
+        },
+        {
+          "name": "UI Design",
+          "description": "Create polished and usable interfaces."
+        },
+        {
+          "name": "Prototyping",
+          "description": "Build interactive flows for testing and presentation."
+        },
+        {
+          "name": "Design Systems",
+          "description": "Create reusable visual rules and components."
+        },
+        {
+          "name": "Case Studies",
+          "description": "Document design decisions and outcomes professionally."
+        }
+      ],
+      "projects": [
+        {
+          "title": "User flow",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Wireframe set",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "UI redesign",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Interactive prototype",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "UX case study",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in UI/UX Design.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in UI/UX Design?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "blockchain-web3",
+      "title": "Blockchain & Web3",
+      "shortTitle": "Blockchain & Web3",
+      "category": "Development",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "Blocks",
+      "description": "Explore blockchain fundamentals, decentralized application concepts and Web3 product architecture through project work.",
+      "applyLink": "",
+      "about": [
+        "This structured Blockchain & Web3 internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Blockchain",
+          "description": "Understand distributed-ledger fundamentals."
+        },
+        {
+          "name": "Web3",
+          "description": "Explore decentralized product concepts and workflows."
+        },
+        {
+          "name": "Smart Contracts",
+          "description": "Learn contract logic and safe conceptual implementation."
+        },
+        {
+          "name": "DApps",
+          "description": "Understand decentralized application structure."
+        },
+        {
+          "name": "Wallet Flow",
+          "description": "Design and reason about wallet-based user flows."
+        },
+        {
+          "name": "GitHub",
+          "description": "Document and present your work using repositories."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Blockchain explorer task",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Wallet UX flow",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Contract concept task",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "DApp prototype",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Web3 capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Blockchain & Web3.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Blockchain & Web3?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "digital-marketing-seo",
+      "title": "Digital Marketing & SEO",
+      "shortTitle": "Digital Marketing",
+      "category": "Business",
+      "level": "Beginner Friendly",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "Megaphone",
+      "description": "Work on audience research, content strategy, SEO fundamentals, campaign planning and measurable digital growth tasks.",
+      "applyLink": "",
+      "about": [
+        "This structured Digital Marketing & SEO internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "SEO",
+          "description": "Improve content discoverability through search optimization."
+        },
+        {
+          "name": "Content",
+          "description": "Plan and create purposeful digital content."
+        },
+        {
+          "name": "Analytics",
+          "description": "Turn data into measurable insights."
+        },
+        {
+          "name": "Campaigns",
+          "description": "Structure measurable marketing campaigns."
+        },
+        {
+          "name": "Research",
+          "description": "Study user needs before making design decisions."
+        },
+        {
+          "name": "Reporting",
+          "description": "Summarize performance and recommendations clearly."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Keyword research",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "SEO audit",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Content plan",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Campaign strategy",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Growth capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Digital Marketing.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Digital Marketing?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "financial-engineering",
+      "title": "Financial Engineering",
+      "shortTitle": "Financial Engineering",
+      "category": "Finance",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "LineChart",
+      "description": "Build quantitative finance foundations through data-driven analysis, modelling concepts and structured project work.",
+      "applyLink": "",
+      "about": [
+        "This structured Financial Engineering internship is designed to help learners move from understanding concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided tasks and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "Excel/Python",
+          "description": "Use spreadsheet or Python workflows for quantitative analysis."
+        },
+        {
+          "name": "Financial Data",
+          "description": "Work with market and finance datasets."
+        },
+        {
+          "name": "Statistics",
+          "description": "Apply statistical thinking to finance problems."
+        },
+        {
+          "name": "Modelling",
+          "description": "Build and interpret basic quantitative models."
+        },
+        {
+          "name": "Risk",
+          "description": "Measure and discuss financial risk."
+        },
+        {
+          "name": "Reporting",
+          "description": "Summarize performance and recommendations clearly."
+        }
+      ],
+      "projects": [
+        {
+          "title": "Market data analysis",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Return/risk calculation",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Portfolio task",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Model report",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Finance capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & Exploratory Task",
+          "description": "Set up the required tools, understand the core concepts and complete the first guided task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Core Implementation",
+          "description": "Apply the main concepts through focused practical work and mini-project development."
+        },
+        {
+          "week": "Week 3",
+          "title": "Major Project Build",
+          "description": "Combine your learning into a structured project with documentation and version control."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Proof of Work",
+          "description": "Polish the project, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and learners interested in building practical skills in Financial Engineering.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free development or design tools for your track.",
+          "bullets": [
+            "Basic computer literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize repositories and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship. Any cohort-specific details should be confirmed in the application form or official communication."
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "Most tracks are designed to be beginner-friendly while still offering practical progression."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided for the cohort. GitHub and form-based proof may be used depending on the track."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the Google Form URL is added in the JSON data, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Project-based learning",
+        "Portfolio-ready proof",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Financial Engineering?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    }
+  ]
+}
