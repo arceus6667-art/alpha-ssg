@@ -6,7 +6,8 @@
     "Design",
     "Security",
     "Business",
-    "Finance"
+    "Finance",
+    "Engineering"
   ],
   "internships": [
     {
@@ -1953,6 +1954,183 @@
       "cta": {
         "eyebrow": "Cohort Enrollment",
         "heading": "Ready to Build Your Proof of Work in Financial Engineering?",
+        "description": "Review the program details and apply when the application form is available."
+      }
+    },
+    {
+      "slug": "mechatronics-mechanical",
+      "title": "Mechatronics & Mechanical Engineering",
+      "shortTitle": "Mechatronics & Mech",
+      "category": "Engineering",
+      "level": "Beginner → Intermediate",
+      "duration": "1 Month",
+      "mode": "Remote",
+      "hours": "180 Hours",
+      "status": "Applications Open",
+      "icon": "Settings",
+      "description": "Build foundational skills in mechatronics, mechanical systems, 3D modelling, simulation, and embedded controls through hands-on project-based milestones.",
+      "applyLink": "",
+      "about": [
+        "This structured Mechatronics & Mechanical Engineering internship is designed to help learners move from understanding core design and control concepts to applying them in practical project work.",
+        "Throughout the program, you will follow weekly milestones, complete guided CAD modelling or simulation tasks, and progressively build stronger, portfolio-ready proof of work."
+      ],
+      "skills": [
+        {
+          "name": "CAD Modelling",
+          "description": "Create and assemble 3D parts using standard CAD software."
+        },
+        {
+          "name": "Microcontrollers",
+          "description": "Program Arduino/embedded chips for sensors and actuators."
+        },
+        {
+          "name": "Control Systems",
+          "description": "Understand feedback control loops and sensor integration."
+        },
+        {
+          "name": "MATLAB / Simulation",
+          "description": "Model system dynamics and execute kinematic simulations."
+        },
+        {
+          "name": "Pneumatics & Hydraulics",
+          "description": "Design basic fluid power schematic control systems."
+        },
+        {
+          "name": "Technical Reporting",
+          "description": "Present design calculation summaries and simulation data clearly."
+        }
+      ],
+      "projects": [
+        {
+          "title": "3D assembly model design & simulation",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Microcontroller sensor & motor control interface",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Fluid power actuator system schematic design",
+          "type": "Mini",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Automated system dynamic simulation report",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        },
+        {
+          "title": "Mechatronic robotic manipulator design capstone",
+          "type": "Major",
+          "description": "Document your process and submit the requested evidence."
+        }
+      ],
+      "roadmap": [
+        {
+          "week": "Week 1",
+          "title": "Foundations & 3D CAD Assembly",
+          "description": "Set up the required design tools, understand the core concepts and complete the first guided 3D modelling task."
+        },
+        {
+          "week": "Week 2",
+          "title": "Control Circuits & Sensor Coding",
+          "description": "Apply control concepts through focused microcontroller sensor-actuator interfacing and circuit simulation."
+        },
+        {
+          "week": "Week 3",
+          "title": "System Simulation Build",
+          "description": "Combine your learning into a structured system dynamic or robotic kinematic simulation with full calculations."
+        },
+        {
+          "week": "Week 4",
+          "title": "Final Submission & Portfolio Proof",
+          "description": "Polish the CAD models, compile simulation results, prepare evidence, complete submission and organize portfolio proof."
+        }
+      ],
+      "eligibility": {
+        "whoCanApply": {
+          "title": "Who Can Apply",
+          "description": "Students, beginners and engineering learners interested in building practical skills in Mechatronics & Mechanical Engineering.",
+          "bullets": [
+            "No prior work experience required",
+            "Willingness to learn and complete design/coding tasks",
+            "Ability to follow submission instructions"
+          ]
+        },
+        "requirements": {
+          "title": "What You Need",
+          "description": "A laptop/desktop, stable internet connection and the relevant free design or simulation tools (Onshape/Fusion360, Tinkercad, MATLAB/Octave).",
+          "bullets": [
+            "Basic computer and mathematical literacy",
+            "GitHub account recommended",
+            "Consistent weekly participation"
+          ]
+        }
+      },
+      "benefits": [
+        {
+          "icon": "BadgeCheck",
+          "title": "Internship Credential",
+          "description": "Completion credential subject to meeting the stated program requirements."
+        },
+        {
+          "icon": "FolderKanban",
+          "title": "Project Portfolio",
+          "description": "Structured project work suitable for showcasing as proof of learning."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "GitHub Proof of Work",
+          "description": "Organize design files, code repositories, and documentation for your projects."
+        },
+        {
+          "icon": "BookOpenCheck",
+          "title": "Guided Learning Path",
+          "description": "Weekly milestones designed to keep your progress structured."
+        }
+      ],
+      "terms": [
+        {
+          "title": "Weekly Task Submission & Evaluation",
+          "description": "Follow the official submission instructions and deadlines shared for the cohort. Incomplete or late submissions may affect completion status."
+        },
+        {
+          "title": "Accurate Information & Original Work",
+          "description": "Provide accurate application information and submit work that represents your own participation. Sources and collaborations should be credited where appropriate."
+        },
+        {
+          "title": "Certificate & Completion Policy",
+          "description": "Completion credentials depend on meeting the program requirements, including required tasks, projects and submissions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is this internship online?",
+          "answer": "This listing is configured as a remote internship using free cloud-based CAD tools (e.g. Onshape, Fusion 360 free tier) and Tinkercad for electronic simulations."
+        },
+        {
+          "question": "Do I need hardware components?",
+          "answer": "No physical hardware components are required. All electronics and controls tasks are completed using virtual cloud-based simulator tools."
+        },
+        {
+          "question": "How do I submit assignments and project work?",
+          "answer": "Submission instructions will be provided. Cloud CAD link shares, Tinkercad simulator links, and project reports on GitHub may be used."
+        },
+        {
+          "question": "How do I apply?",
+          "answer": "Use the Apply for Internship button. Once the application form is available, it opens in a new tab."
+        }
+      ],
+      "sidebarChecks": [
+        "Hands-on CAD modelling",
+        "Sensor/actuator simulation",
+        "Structured weekly roadmap"
+      ],
+      "cta": {
+        "eyebrow": "Cohort Enrollment",
+        "heading": "Ready to Build Your Proof of Work in Mechatronics & Mech?",
         "description": "Review the program details and apply when the application form is available."
       }
     }
