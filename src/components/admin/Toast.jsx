@@ -9,6 +9,10 @@ export function showToast(message, type = 'success', duration = 3500) {
   }
 }
 
+export function useToast() {
+  return { showToast };
+}
+
 export default function ToastContainer() {
   const [toasts, setToasts] = useState([]);
 

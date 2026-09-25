@@ -8,7 +8,12 @@ export default function AnnouncementBanner() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    const loadBanner = () => {
+    const loadBanner = async () => {
+      try {
+        await contentService.fetchUpdates();
+      } catch (e) {
+        // Fallback
+      }
       const updates = contentService.getPublishedUpdates();
       // Find highest priority active update (urgent or important)
       const topUpdate = updates.find(
@@ -19,7 +24,11 @@ export default function AnnouncementBanner() {
         const isDismissed = sessionStorage.getItem(`ssg_dismiss_banner_${topUpdate.id}`);
         if (!isDismissed) {
           setAnnouncement(topUpdate);
+        } else {
+          setAnnouncement(null);
         }
+      } else {
+        setAnnouncement(null);
       }
     };
 

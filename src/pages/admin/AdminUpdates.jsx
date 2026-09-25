@@ -37,7 +37,14 @@ export default function AdminUpdates() {
     expiresAt: '',
   });
 
-  const loadData = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const loadData = async () => {
+    try {
+      await contentService.fetchUpdates();
+    } catch (e) {
+      // Fallback
+    }
     setUpdates(contentService.getUpdates());
   };
 
@@ -77,37 +84,51 @@ export default function AdminUpdates() {
     setIsModalOpen(true);
   };
 
-  const handleSave = (e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
     if (!form.title.trim() || !form.shortDescription.trim()) {
       showToast('Please fill in required fields (Title & Short description)', 'error');
       return;
     }
 
-    contentService.saveUpdate({
-      ...(editingItem ? { id: editingItem.id } : {}),
-      ...form,
-    });
-
-    setIsModalOpen(false);
-    showToast(editingItem ? 'Announcement updated successfully.' : 'New announcement created and published.');
-  };
-
-  const handleDelete = () => {
-    if (deleteConfirmId) {
-      contentService.deleteUpdate(deleteConfirmId);
-      setDeleteConfirmId(null);
-      showToast('Announcement deleted successfully.');
+    setIsSubmitting(true);
+    try {
+      await contentService.saveUpdate({
+        ...(editingItem ? { id: editingItem.id } : {}),
+        ...form,
+      });
+      setIsModalOpen(false);
+      showToast(editingItem ? 'Announcement updated in centralized database.' : 'New announcement created and published.');
+    } catch (err) {
+      showToast(err.message || 'Failed to save announcement', 'error');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
-  const togglePublishStatus = (item) => {
+  const handleDelete = async () => {
+    if (deleteConfirmId) {
+      try {
+        await contentService.deleteUpdate(deleteConfirmId);
+        setDeleteConfirmId(null);
+        showToast('Announcement removed from database.');
+      } catch (err) {
+        showToast(err.message || 'Failed to delete announcement', 'error');
+      }
+    }
+  };
+
+  const togglePublishStatus = async (item) => {
     const nextStatus = item.status === 'published' ? 'draft' : 'published';
-    contentService.saveUpdate({
-      ...item,
-      status: nextStatus,
-    });
-    showToast(`Status updated to ${nextStatus}.`);
+    try {
+      await contentService.saveUpdate({
+        ...item,
+        status: nextStatus,
+      });
+      showToast(`Status updated to ${nextStatus}.`);
+    } catch (err) {
+      showToast(err.message || 'Failed to update status', 'error');
+    }
   };
 
   const filteredUpdates = updates.filter((u) => {

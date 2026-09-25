@@ -44,6 +44,8 @@ import AdminAnalytics from './pages/admin/AdminAnalytics';
 import AdminFutureModule from './pages/admin/AdminFutureModule';
 import AntiGravityCanvas from './components/AntiGravityCanvas';
 import AdminSettings from './pages/admin/AdminSettings';
+import VerificationPortal from './pages/VerificationPortal';
+import AdminVerification from './pages/admin/AdminVerification';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -98,6 +100,8 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/verification" element={<VerificationPortal />} />
+          <Route path="/verify" element={<VerificationPortal />} />
 
           {/* Legal Pages */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -127,6 +131,7 @@ export default function App() {
             <Route path="magazine" element={<AdminMagazine />} />
             <Route path="articles" element={<AdminArticles />} />
             <Route path="analytics" element={<AdminAnalytics />} />
+            <Route path="verification" element={<AdminVerification />} />
 
             {/* Future Modules — Under Construction */}
             <Route path="users" element={<AdminFutureModule />} />

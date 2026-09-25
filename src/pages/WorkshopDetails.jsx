@@ -20,7 +20,21 @@ import { handleApplicationRedirect } from '../utils/applicationTracker';
 
 export default function WorkshopDetails() {
   const { slug } = useParams();
-  const workshop = contentService.getWorkshop(slug);
+  const [workshop, setWorkshop] = useState(() => contentService.getWorkshop(slug));
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        await contentService.fetchWorkshops();
+      } catch (e) {
+        // Fallback
+      }
+      setWorkshop(contentService.getWorkshop(slug));
+    };
+    load();
+    window.addEventListener('ssg:content_changed', load);
+    return () => window.removeEventListener('ssg:content_changed', load);
+  }, [slug]);
 
   if (!workshop) {
     return <Navigate to="/workshops" replace />;

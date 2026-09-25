@@ -16,7 +16,21 @@ import { contentService } from '../services/contentService';
 
 export default function MagazineDetails() {
   const { slug } = useParams();
-  const issue = contentService.getMagazine(slug);
+  const [issue, setIssue] = useState(() => contentService.getMagazine(slug));
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        await contentService.fetchMagazines();
+      } catch (e) {
+        // Fallback
+      }
+      setIssue(contentService.getMagazine(slug));
+    };
+    load();
+    window.addEventListener('ssg:content_changed', load);
+    return () => window.removeEventListener('ssg:content_changed', load);
+  }, [slug]);
 
   if (!issue) {
     return <Navigate to="/magazine" replace />;

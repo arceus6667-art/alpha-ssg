@@ -33,11 +33,21 @@ export default function Home() {
   const [articlesList, setArticlesList] = useState(() => contentService.getPublicArticles());
 
   useEffect(() => {
-    const handleUpdate = () => {
+    const handleUpdate = async () => {
+      try {
+        await Promise.allSettled([
+          contentService.fetchWorkshops(),
+          contentService.fetchMagazines(),
+          contentService.fetchArticles(),
+        ]);
+      } catch (e) {
+        // Fallback
+      }
       setWorkshopsList(contentService.getPublicWorkshops());
       setMagazinesList(contentService.getPublicMagazines());
       setArticlesList(contentService.getPublicArticles());
     };
+    handleUpdate();
     window.addEventListener('ssg:content_changed', handleUpdate);
     window.addEventListener('storage', handleUpdate);
     return () => {

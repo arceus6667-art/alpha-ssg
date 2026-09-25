@@ -40,7 +40,14 @@ export default function AdminMagazine() {
     status: 'published',
   });
 
-  const loadData = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const loadData = async () => {
+    try {
+      await contentService.fetchMagazines();
+    } catch (e) {
+      // Fallback
+    }
     setMagazines(contentService.getMagazines());
   };
 
@@ -88,7 +95,7 @@ export default function AdminMagazine() {
     setIsModalOpen(true);
   };
 
-  const handleSave = (e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
     if (!form.title.trim() || !form.edition.trim()) {
       showToast('Please provide an issue title and edition name.', 'error');
@@ -102,21 +109,31 @@ export default function AdminMagazine() {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '');
 
-    contentService.saveMagazine({
-      ...(editingItem ? { id: editingItem.id } : {}),
-      ...form,
-      slug: generatedSlug,
-    });
-
-    setIsModalOpen(false);
-    showToast(editingItem ? 'Magazine edition updated.' : 'New magazine edition published.');
+    setIsSubmitting(true);
+    try {
+      await contentService.saveMagazine({
+        ...(editingItem ? { id: editingItem.id } : {}),
+        ...form,
+        slug: generatedSlug,
+      });
+      setIsModalOpen(false);
+      showToast(editingItem ? 'Magazine edition updated in database.' : 'New magazine edition published globally.');
+    } catch (err) {
+      showToast(err.message || 'Failed to save magazine edition', 'error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleDelete = () => {
+  const handleDelete = async () => {
     if (deleteConfirmId) {
-      contentService.deleteMagazine(deleteConfirmId);
-      setDeleteConfirmId(null);
-      showToast('Magazine edition deleted successfully.');
+      try {
+        await contentService.deleteMagazine(deleteConfirmId);
+        setDeleteConfirmId(null);
+        showToast('Magazine edition deleted from database.');
+      } catch (err) {
+        showToast(err.message || 'Failed to delete magazine edition', 'error');
+      }
     }
   };
 

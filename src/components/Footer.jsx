@@ -23,15 +23,15 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center sm:justify-start gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
+            <Link to="/verification" className="flex items-center justify-center sm:justify-start gap-3 group hover:opacity-95 transition-opacity">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0 group-hover:scale-105 transition-transform">
                 <Award size={18} />
               </div>
               <div>
-                <strong className="block text-sm font-bold text-white">Verifiable Credentials</strong>
+                <strong className="block text-sm font-bold text-white group-hover:text-emerald-300 transition-colors">Verifiable Credentials</strong>
                 <span className="text-xs text-slate-400">Official certificates with unique verification IDs</span>
               </div>
-            </div>
+            </Link>
 
             <div className="flex items-center justify-center sm:justify-start gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20 shrink-0">
@@ -174,6 +174,12 @@ export default function Footer() {
               <li>
                 <Link to="/articles?category=AI%20%26%20Machine%20Learning" className="hover:text-emerald-400 transition-colors">
                   AI Architecture
+                </Link>
+              </li>
+              <li>
+                <Link to="/verification" className="hover:text-emerald-300 transition-colors inline-flex items-center gap-1.5 font-medium text-emerald-400">
+                  <span>Verify Credential</span>
+                  <span className="rounded bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.2 font-mono">Beta</span>
                 </Link>
               </li>
               <li>

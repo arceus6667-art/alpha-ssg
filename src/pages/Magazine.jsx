@@ -10,7 +10,15 @@ export default function Magazine() {
   const [magazines, setMagazines] = useState(() => contentService.getPublicMagazines());
 
   useEffect(() => {
-    const handleUpdate = () => setMagazines(contentService.getPublicMagazines());
+    const handleUpdate = async () => {
+      try {
+        await contentService.fetchMagazines();
+      } catch (e) {
+        // Fallback
+      }
+      setMagazines(contentService.getPublicMagazines());
+    };
+    handleUpdate();
     window.addEventListener('ssg:content_changed', handleUpdate);
     window.addEventListener('storage', handleUpdate);
     return () => {

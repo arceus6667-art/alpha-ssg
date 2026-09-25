@@ -13,7 +13,15 @@ export default function Workshops() {
   const [workshops, setWorkshops] = useState(() => contentService.getPublicWorkshops());
 
   useEffect(() => {
-    const handleUpdate = () => setWorkshops(contentService.getPublicWorkshops());
+    const handleUpdate = async () => {
+      try {
+        await contentService.fetchWorkshops();
+      } catch (e) {
+        // Fallback
+      }
+      setWorkshops(contentService.getPublicWorkshops());
+    };
+    handleUpdate();
     window.addEventListener('ssg:content_changed', handleUpdate);
     window.addEventListener('storage', handleUpdate);
     return () => {

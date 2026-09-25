@@ -44,6 +44,7 @@ export default function AdminLayout() {
     { label: 'Magazine', path: '/admin/magazine', icon: BookOpen },
     { label: 'Articles', path: '/admin/articles', icon: FileText },
     { label: 'Click Analytics', path: '/admin/analytics', icon: BarChart3 },
+    { label: 'Verification Portal', path: '/admin/verification', icon: ShieldCheck },
   ];
 
   const navItemsFuture = [

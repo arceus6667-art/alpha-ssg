@@ -29,14 +29,28 @@ export default function AdminAnalytics() {
     rawClicks: [],
   });
 
-  const loadData = () => {
-    setAnalytics(contentService.getClickAnalytics(dateRange));
+  const [loading, setLoading] = useState(false);
+
+  const loadData = async () => {
+    setLoading(true);
+    try {
+      const data = await contentService.fetchClickAnalytics(dateRange);
+      setAnalytics(data);
+    } catch (e) {
+      setAnalytics(contentService.getClickAnalytics(dateRange));
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     loadData();
     window.addEventListener('ssg:apply_click', loadData);
-    return () => window.removeEventListener('ssg:apply_click', loadData);
+    window.addEventListener('ssg:content_changed', loadData);
+    return () => {
+      window.removeEventListener('ssg:apply_click', loadData);
+      window.removeEventListener('ssg:content_changed', loadData);
+    };
   }, [dateRange]);
 
   const handleExportJSON = () => {

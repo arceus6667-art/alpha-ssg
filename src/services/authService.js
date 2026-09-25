@@ -1,79 +1,63 @@
 /**
- * SkillSet Go EduTech - Admin Authentication Service
- * Handles admin session state, token persistence, and safe development credentials.
+ * SkillSet Go EduTech - Admin Authentication Service (Server-Side Sessions)
+ * 
+ * Authentication flow:
+ *   1. POST /api/admin/login → Express validates credentials against DB
+ *   2. Server issues a session token (stored in SQLite admin_sessions)
+ *   3. Token stored in localStorage ONLY as a session identifier (not auth proof)
+ *   4. Every protected API call sends token in Authorization header
+ *   5. Server validates token against DB on every request
+ * 
+ * Security: credentials are NEVER checked in the frontend.
+ *           Token validity is ALWAYS verified server-side.
  */
 
 const AUTH_STORAGE_KEY = 'ssg_admin_session';
-const TOKEN_EXPIRY_HOURS = 8; // Session valid for 8 hours
-
-// SAFE DEVELOPMENT CREDENTIALS (DOCUMENTED FOR LOCAL/DEV USE ONLY)
-// In production, authentication is handled via server-side /api/admin/login or an identity provider.
-export const DEV_CREDENTIALS = {
-  email: 'admin@skillsetgo.com',
-  password: 'Admin@SSG2026!',
-  role: 'Super Administrator',
-  name: 'EduTech Admin',
-};
 
 export const authService = {
   /**
-   * Log in with credentials
-   * @param {string} email 
-   * @param {string} password 
+   * Login via server-side API
+   * Credentials are validated by the Express server against the SQLite database.
    */
   async login(email, password) {
     const cleanEmail = String(email || '').trim().toLowerCase();
     const cleanPassword = String(password || '').trim();
 
     try {
-      // First attempt server-side verification if server is reachable
       const response = await fetch('/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: cleanEmail, password: cleanPassword }),
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        this.setSession(data.token, data.user);
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        this.setSession(data.token, data.user, data.expiresAt);
         return { success: true, user: data.user };
       }
-    } catch (err) {
-      // If offline or dev fallback, continue to dev credentials check below
-      console.info('[Auth Service] Checking local development credentials...');
-    }
 
-    // Development fallback check
-    if (
-      cleanEmail === DEV_CREDENTIALS.email.toLowerCase() &&
-      cleanPassword === DEV_CREDENTIALS.password
-    ) {
-      const user = {
-        id: 'usr_admin_001',
-        email: DEV_CREDENTIALS.email,
-        name: DEV_CREDENTIALS.name,
-        role: DEV_CREDENTIALS.role,
+      return {
+        success: false,
+        error: data.error || 'Invalid administrator credentials.',
       };
-
-      const token = 'ssg_tok_' + Math.random().toString(36).substring(2) + Date.now();
-      this.setSession(token, user);
-      return { success: true, user };
+    } catch (err) {
+      console.error('[Auth Service] Login request failed:', err.message);
+      return {
+        success: false,
+        error: 'Unable to connect to authentication server. Please check your connection.',
+      };
     }
-
-    return {
-      success: false,
-      error: 'Invalid Admin Email or Password. Please verify your credentials.',
-    };
   },
 
   /**
-   * Store active session
+   * Store session token locally (for session identity only, not auth proof)
    */
-  setSession(token, user) {
+  setSession(token, user, expiresAt) {
     const session = {
       token,
       user,
-      expiresAt: Date.now() + TOKEN_EXPIRY_HOURS * 60 * 60 * 1000,
+      expiresAt: expiresAt || new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString(),
     };
     try {
       localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(session));
@@ -84,7 +68,9 @@ export const authService = {
   },
 
   /**
-   * Check if current session is valid and unexpired
+   * Check if the stored session token is still locally non-expired.
+   * NOTE: This is a preliminary client-side check only.
+   *       The server validates the token on every protected API call.
    */
   isAuthenticated() {
     try {
@@ -94,7 +80,7 @@ export const authService = {
       const session = JSON.parse(stored);
       if (!session || !session.token || !session.expiresAt) return false;
 
-      if (Date.now() > session.expiresAt) {
+      if (new Date() > new Date(session.expiresAt)) {
         this.logout();
         return false;
       }
@@ -106,7 +92,21 @@ export const authService = {
   },
 
   /**
-   * Get current logged in admin user
+   * Get session token for API authorization headers
+   */
+  getToken() {
+    try {
+      const stored = localStorage.getItem(AUTH_STORAGE_KEY);
+      if (!stored) return null;
+      const session = JSON.parse(stored);
+      return session.token || null;
+    } catch {
+      return null;
+    }
+  },
+
+  /**
+   * Get the cached user object (display only — never trusted as auth proof)
    */
   getCurrentUser() {
     try {
@@ -120,9 +120,45 @@ export const authService = {
   },
 
   /**
-   * Log out and clear session
+   * Verify token is still valid with the server (optional check for sensitive pages)
    */
-  logout() {
+  async verifySession() {
+    try {
+      const token = this.getToken();
+      if (!token) return false;
+
+      const response = await fetch('/api/admin/verify', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      if (!response.ok) {
+        this.logout();
+        return false;
+      }
+
+      return true;
+    } catch {
+      return false;
+    }
+  },
+
+  /**
+   * Logout: clear local session AND notify server to revoke token
+   */
+  async logout() {
+    try {
+      const token = this.getToken();
+      if (token) {
+        // Best-effort server-side token revocation
+        fetch('/api/admin/logout', {
+          method: 'POST',
+          headers: { Authorization: `Bearer ${token}` },
+        }).catch(() => {});
+      }
+    } catch (e) {
+      // ignore
+    }
+
     try {
       localStorage.removeItem(AUTH_STORAGE_KEY);
       window.dispatchEvent(new CustomEvent('ssg:auth_changed', { detail: { isAuthenticated: false, user: null } }));
@@ -132,4 +168,10 @@ export const authService = {
   },
 };
 
+export const DEV_CREDENTIALS = {
+  email: 'admin@skillsetgo.com',
+  password: 'Admin@SSG2026!',
+};
+
 export default authService;
+

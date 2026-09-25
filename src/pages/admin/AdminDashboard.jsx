@@ -32,12 +32,21 @@ export default function AdminDashboard() {
   const [activeUpdates, setActiveUpdates] = useState([]);
 
   useEffect(() => {
-    const refreshData = () => {
+    const refreshData = async () => {
+      try {
+        await Promise.allSettled([
+          contentService.fetchActivityLog(10),
+          contentService.fetchClickAnalytics('all'),
+        ]);
+      } catch (e) {
+        // Fallback to cache
+      }
+
       const workshops = contentService.getWorkshops();
       const upcoming = workshops.filter(w => w.status === 'upcoming' || w.status === 'registration-open').length;
       const magazines = contentService.getMagazines().filter(m => m.status === 'published').length;
       const articles = contentService.getArticles().filter(a => a.status === 'published').length;
-      const analytics = contentService.getClickAnalytics('all');
+      const analytics = contentService.getClickAnalytics();
       const updates = contentService.getPublishedUpdates();
 
       setStats({
@@ -45,8 +54,8 @@ export default function AdminDashboard() {
         upcomingWorkshops: upcoming,
         publishedMagazines: magazines,
         publishedArticles: articles,
-        totalClicks: analytics.totalClicks,
-        clicksToday: analytics.clicksToday,
+        totalClicks: analytics.totalClicks || 0,
+        clicksToday: analytics.clicksToday || 0,
       });
 
       setRecentActivity(contentService.getActivityLog().slice(0, 6));

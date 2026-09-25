@@ -39,7 +39,14 @@ export default function AdminArticles() {
     status: 'published',
   });
 
-  const loadData = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const loadData = async () => {
+    try {
+      await contentService.fetchArticles();
+    } catch (e) {
+      // Fallback
+    }
     setArticles(contentService.getArticles());
   };
 
@@ -85,7 +92,7 @@ export default function AdminArticles() {
     setIsModalOpen(true);
   };
 
-  const handleSave = (e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
     if (!form.title.trim() || !form.excerpt.trim()) {
       showToast('Please provide an article title and excerpt.', 'error');
@@ -99,33 +106,43 @@ export default function AdminArticles() {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '');
 
-    contentService.saveArticle({
-      ...(editingItem ? { id: editingItem.id } : {}),
-      title: form.title,
-      slug: generatedSlug,
-      category: form.category,
-      excerpt: form.excerpt,
-      content: form.content,
-      coverImage: form.coverImage,
-      readingTime: form.readingTime,
-      publishedAt: form.publishedAt,
-      status: form.status,
-      author: {
-        name: form.authorName,
-        role: form.authorRole,
-        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
-      },
-    });
-
-    setIsModalOpen(false);
-    showToast(editingItem ? 'Article updated successfully.' : 'New article published.');
+    setIsSubmitting(true);
+    try {
+      await contentService.saveArticle({
+        ...(editingItem ? { id: editingItem.id } : {}),
+        title: form.title,
+        slug: generatedSlug,
+        category: form.category,
+        excerpt: form.excerpt,
+        content: form.content,
+        coverImage: form.coverImage,
+        readingTime: form.readingTime,
+        publishedAt: form.publishedAt,
+        status: form.status,
+        author: {
+          name: form.authorName,
+          role: form.authorRole,
+          avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+        },
+      });
+      setIsModalOpen(false);
+      showToast(editingItem ? 'Article updated in database.' : 'New article published globally.');
+    } catch (err) {
+      showToast(err.message || 'Failed to save article', 'error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleDelete = () => {
+  const handleDelete = async () => {
     if (deleteConfirmId) {
-      contentService.deleteArticle(deleteConfirmId);
-      setDeleteConfirmId(null);
-      showToast('Article deleted successfully.');
+      try {
+        await contentService.deleteArticle(deleteConfirmId);
+        setDeleteConfirmId(null);
+        showToast('Article deleted from database.');
+      } catch (err) {
+        showToast(err.message || 'Failed to delete article', 'error');
+      }
     }
   };
 

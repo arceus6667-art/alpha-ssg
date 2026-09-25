@@ -16,7 +16,21 @@ import { contentService } from '../services/contentService';
 
 export default function ArticleDetails() {
   const { slug } = useParams();
-  const article = contentService.getArticle(slug);
+  const [article, setArticle] = useState(() => contentService.getArticle(slug));
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        await contentService.fetchArticles();
+      } catch (e) {
+        // Fallback
+      }
+      setArticle(contentService.getArticle(slug));
+    };
+    load();
+    window.addEventListener('ssg:content_changed', load);
+    return () => window.removeEventListener('ssg:content_changed', load);
+  }, [slug]);
 
   if (!article) {
     return <Navigate to="/articles" replace />;

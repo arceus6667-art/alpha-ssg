@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink } from 'lucide-react';
+import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink, ShieldCheck } from 'lucide-react';
 import Logo from './Logo';
 import { siteConfig } from '../config/siteConfig';
 import { handleApplicationRedirect } from '../utils/applicationTracker';
@@ -179,6 +179,24 @@ export default function Header() {
                       <div className="text-[11px] text-slate-500">Official developer swag & kits</div>
                     </div>
                   </Link>
+
+                  <Link
+                    to="/verification"
+                    className="flex items-start gap-3 rounded-lg p-2.5 transition-colors hover:bg-emerald-50/50 border-t border-slate-100 mt-1 pt-2"
+                  >
+                    <div className="mt-0.5 rounded-md bg-emerald-50 p-1.5 text-emerald-600">
+                      <ShieldCheck size={16} />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-1.5 text-sm font-bold text-slate-800">
+                        <span>Verification Portal</span>
+                        <span className="rounded bg-emerald-100 px-1.5 py-0.2 text-[10px] font-bold text-emerald-800">
+                          Alpha
+                        </span>
+                      </div>
+                      <div className="text-[11px] text-slate-500">Verify certificates & credentials</div>
+                    </div>
+                  </Link>
                 </div>
               )}
             </div>
@@ -317,6 +335,21 @@ export default function Header() {
                 </div>
                 <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-800">
                   Coming Soon
+                </span>
+              </Link>
+
+              <Link
+                to="/verification"
+                className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-medium ${
+                  location.pathname.startsWith('/verification') ? 'bg-emerald-50 text-emerald-700' : 'text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <ShieldCheck size={16} className="text-emerald-600" />
+                  <span>Verification Portal</span>
+                </div>
+                <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-bold text-emerald-800">
+                  Alpha
                 </span>
               </Link>
             </div>

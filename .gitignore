@@ -8,3 +8,7 @@ dist-ssr
 .DS_Store
 Thumbs.db
 alpha-ssg/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal

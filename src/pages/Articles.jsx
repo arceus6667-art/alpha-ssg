@@ -14,7 +14,15 @@ export default function Articles() {
   const [articles, setArticles] = useState(() => contentService.getPublicArticles());
 
   useEffect(() => {
-    const handleUpdate = () => setArticles(contentService.getPublicArticles());
+    const handleUpdate = async () => {
+      try {
+        await contentService.fetchArticles();
+      } catch (e) {
+        // Fallback
+      }
+      setArticles(contentService.getPublicArticles());
+    };
+    handleUpdate();
     window.addEventListener('ssg:content_changed', handleUpdate);
     window.addEventListener('storage', handleUpdate);
     return () => {

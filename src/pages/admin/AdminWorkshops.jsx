@@ -51,7 +51,14 @@ export default function AdminWorkshops() {
     registrationUrl: siteConfig.applicationFormUrl,
   });
 
-  const loadData = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const loadData = async () => {
+    try {
+      await contentService.fetchWorkshops();
+    } catch (e) {
+      // Fallback
+    }
     setWorkshops(contentService.getWorkshops());
   };
 
@@ -113,7 +120,7 @@ export default function AdminWorkshops() {
     setIsModalOpen(true);
   };
 
-  const handleSave = (e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
     if (!form.title.trim() || !form.date.trim()) {
       showToast('Please provide a workshop title and session date.', 'error');
@@ -158,25 +165,40 @@ export default function AdminWorkshops() {
       },
     };
 
-    contentService.saveWorkshop(workshopPayload);
-    setIsModalOpen(false);
-    showToast(editingItem ? 'Workshop updated successfully.' : 'New workshop published.');
-  };
-
-  const handleDelete = () => {
-    if (deleteConfirmId) {
-      contentService.deleteWorkshop(deleteConfirmId);
-      setDeleteConfirmId(null);
-      showToast('Workshop deleted successfully.');
+    setIsSubmitting(true);
+    try {
+      await contentService.saveWorkshop(workshopPayload);
+      setIsModalOpen(false);
+      showToast(editingItem ? 'Workshop updated in database.' : 'New workshop published globally.');
+    } catch (err) {
+      showToast(err.message || 'Failed to save workshop', 'error');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
-  const setWorkshopStatus = (item, newStatus) => {
-    contentService.saveWorkshop({
-      ...item,
-      status: newStatus,
-    });
-    showToast(`Workshop status changed to "${newStatus}".`);
+  const handleDelete = async () => {
+    if (deleteConfirmId) {
+      try {
+        await contentService.deleteWorkshop(deleteConfirmId);
+        setDeleteConfirmId(null);
+        showToast('Workshop deleted from central database.');
+      } catch (err) {
+        showToast(err.message || 'Failed to delete workshop', 'error');
+      }
+    }
+  };
+
+  const setWorkshopStatus = async (item, newStatus) => {
+    try {
+      await contentService.saveWorkshop({
+        ...item,
+        status: newStatus,
+      });
+      showToast(`Workshop status changed to "${newStatus}".`);
+    } catch (err) {
+      showToast(err.message || 'Failed to update status', 'error');
+    }
   };
 
   const filteredWorkshops = workshops.filter((w) => {
