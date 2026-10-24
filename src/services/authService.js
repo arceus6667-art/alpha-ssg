@@ -168,10 +168,6 @@ export const authService = {
   },
 };
 
-export const DEV_CREDENTIALS = {
-  email: 'admin@skillsetgo.com',
-  password: 'Admin@SSG2026!',
-};
 
 export default authService;
 
