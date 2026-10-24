@@ -19,31 +19,10 @@ const API_BASE = '/api';
 
 // Internal In-Memory State Cache (Synchronized from Central DB)
 const state = {
-  updates: [
-    {
-      id: 'ann-01',
-      title: 'Summer 2026 Project-Based Internship Cohort Open',
-      shortDescription: 'Applications now open for all 12 specialized project paths. Limited seats available for dedicated mentorship.',
-      status: 'published',
-      priority: 'urgent',
-      ctaText: 'Apply Now',
-      ctaUrl: '/internships',
-      createdAt: new Date().toISOString(),
-    },
-    {
-      id: 'ann-02',
-      title: 'New Mechatronics Track Launched',
-      shortDescription: 'Explore robotics, embedded systems, and IoT with our new engineering track.',
-      status: 'published',
-      priority: 'important',
-      ctaText: 'Explore Track',
-      ctaUrl: '/internships/mechatronics-robotics',
-      createdAt: new Date().toISOString(),
-    }
-  ],
-  workshops: defaultWorkshops || [],
-  magazines: defaultMagazines || [],
-  articles: defaultArticles || [],
+  updates: [],
+  workshops: [],
+  magazines: [],
+  articles: [],
   activity: [],
   analytics: {
     totalClicks: 0,
