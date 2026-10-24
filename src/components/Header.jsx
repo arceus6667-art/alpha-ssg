@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink, ShieldCheck, LogIn } from 'lucide-react';
 import Logo from './Logo';
 import { siteConfig } from '../config/siteConfig';
 import { handleApplicationRedirect } from '../utils/applicationTracker';
@@ -58,8 +58,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80'
-          : 'bg-white border-b border-slate-200/60'
+          ? 'bg-white/90 backdrop-blur-xl shadow-md shadow-emerald-950/5 border-b border-emerald-100/80'
+          : 'bg-white/95 backdrop-blur-lg border-b border-slate-200/60'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -251,6 +251,15 @@ export default function Header() {
               <span>Apply for Internship</span>
               <ArrowRight size={14} />
             </button>
+
+            <Link
+              to="/admin/login"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-200 bg-white px-3 sm:px-4 py-2 text-xs font-bold text-emerald-800 shadow-sm transition-all hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-600"
+              aria-label="Admin login"
+            >
+              <LogIn size={15} />
+              <span>Login</span>
+            </Link>
 
             {/* Mobile Hamburger Button */}
             <button
