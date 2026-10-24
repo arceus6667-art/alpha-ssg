@@ -102,7 +102,7 @@ export default function Home() {
             <div className="lg:col-span-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200/90 bg-emerald-50/90 px-3.5 py-1.5 text-xs font-semibold text-emerald-800 shadow-xs mb-6">
                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Next Cohort Admissions Open</span>
+                <span>November 2026 Internship Cohort</span>
                 <span className="hidden sm:inline text-slate-300">/</span>
                 <span className="hidden sm:inline text-emerald-900 font-bold">12 Technical Tracks</span>
               </div>
@@ -266,7 +266,7 @@ export default function Home() {
             <div className="pt-4 sm:pt-0">
               <span className="block text-4xl sm:text-5xl font-black tracking-tight text-slate-900 mb-1.5 tabular-nums">
                 <span className="bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
-                  {siteConfig.metrics.learnersCount}
+                  {siteConfig.metrics.learnersCount ?? "—"}
                 </span>
               </span>
               <span className="text-xs font-bold text-slate-700 uppercase tracking-widest">
@@ -288,7 +288,7 @@ export default function Home() {
             <div className="pt-6 sm:pt-0">
               <span className="block text-4xl sm:text-5xl font-black tracking-tight text-slate-900 mb-1.5 tabular-nums">
                 <span className="bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
-                  {siteConfig.metrics.projectsCount}
+                  {siteConfig.metrics.projectsCount ?? "—"}
                 </span>
               </span>
               <span className="text-xs font-bold text-slate-700 uppercase tracking-widest">
@@ -590,7 +590,7 @@ export default function Home() {
           </h2>
 
           <p className="text-base sm:text-lg text-emerald-100 leading-relaxed mb-8">
-            Join thousands of learners building real skills through structured milestones and verified GitHub contributions.
+            Build real skills through structured milestones and GitHub-based project submissions.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Menu, X, ChevronDown, Sparkles, BookOpen, Layers, Gift, FileText, ArrowRight, ExternalLink, ShieldCheck, LogIn } from 'lucide-react';
 import Logo from './Logo';
 import { siteConfig } from '../config/siteConfig';
 import { handleApplicationRedirect } from '../utils/applicationTracker';
@@ -58,8 +58,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80'
-          : 'bg-white border-b border-slate-200/60'
+          ? 'bg-white/90 backdrop-blur-xl shadow-md shadow-emerald-950/5 border-b border-emerald-100/80'
+          : 'bg-white/95 backdrop-blur-lg border-b border-slate-200/60'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -251,6 +251,16 @@ export default function Header() {
               <span>Apply for Internship</span>
               <ArrowRight size={14} />
             </button>
+
+            <Link
+              to="/login"
+              className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-xl bg-emerald-600 px-3 sm:px-4 py-2.5 text-xs font-bold text-white shadow-md shadow-emerald-600/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 motion-reduce:transform-none"
+              aria-label="Student login"
+            >
+              <span aria-hidden="true" className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full motion-reduce:hidden" />
+              <LogIn size={15} className="relative transition-transform duration-300 group-hover:translate-x-0.5 motion-reduce:transform-none" />
+              <span className="relative">Login</span>
+            </Link>
 
             {/* Mobile Hamburger Button */}
             <button
