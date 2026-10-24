@@ -35,6 +35,8 @@ import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/admin/ProtectedRoute';
 import AdminLayout from './layouts/AdminLayout';
 import AdminLogin from './pages/admin/AdminLogin';
+import StudentLogin from './pages/StudentLogin';
+import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminUpdates from './pages/admin/AdminUpdates';
 import AdminWorkshops from './pages/admin/AdminWorkshops';
@@ -114,6 +116,8 @@ export default function App() {
           {/* ====================================================
               ADMIN AUTHENTICATION & PORTAL ROUTES
               ==================================================== */}
+          <Route path="/login" element={<StudentLogin />} />
+          <Route path="/student" element={<StudentDashboard />} />
           <Route path="/admin/login" element={<AdminLogin />} />
 
           {/* Protected Admin Routes */}
