@@ -12,3 +12,23 @@ export async function signInStudentWithGoogle() {
   });
   if (error) throw error;
 }
+
+export async function sendStudentEmailOtp(email) {
+  if (!studentSupabase) throw new Error('Student sign-in is not configured yet.');
+  const { error } = await studentSupabase.auth.signInWithOtp({
+    email: email.trim(),
+    options: { shouldCreateUser: true },
+  });
+  if (error) throw error;
+}
+
+export async function verifyStudentEmailOtp(email, token) {
+  if (!studentSupabase) throw new Error('Student sign-in is not configured yet.');
+  const { data, error } = await studentSupabase.auth.verifyOtp({
+    email: email.trim(),
+    token: token.trim(),
+    type: 'email',
+  });
+  if (error) throw error;
+  return data;
+}
