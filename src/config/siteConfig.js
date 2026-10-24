@@ -18,7 +18,7 @@ export const siteConfig = {
     adminEmail: "admin@skillsetgoedutech.in",
     admissionsEmail: "senior-hr@skillsetgoedutech.in",
     hrEmail: "senior-hr@skillsetgoedutech.in",
-    phone: "+91 98765 43210", // Configurable placeholder for official contact
+    phone: null, // No public phone number until verified
     location: "Mumbai, Maharashtra, India",
     workingHours: "Monday - Saturday: 9:30 AM – 6:30 PM IST",
     responseTime: "Typically responds within 24 business hours",
@@ -26,11 +26,11 @@ export const siteConfig = {
 
   // Editable Impact Metrics
   metrics: {
-    learnersCount: "1,500+",
+    learnersCount: null,
     learnersLabel: "Enrolled Learners",
     domainsCount: "12",
     domainsLabel: "Internship Domains",
-    projectsCount: "150+",
+    projectsCount: null,
     projectsLabel: "Real-World Projects",
   },
 
