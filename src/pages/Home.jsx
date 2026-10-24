@@ -102,7 +102,7 @@ export default function Home() {
             <div className="lg:col-span-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200/90 bg-emerald-50/90 px-3.5 py-1.5 text-xs font-semibold text-emerald-800 shadow-xs mb-6">
                 <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Next Cohort Admissions Open</span>
+                <span>November 2026 Internship Cohort</span>
                 <span className="hidden sm:inline text-slate-300">/</span>
                 <span className="hidden sm:inline text-emerald-900 font-bold">12 Technical Tracks</span>
               </div>
