@@ -4,7 +4,7 @@ import { Lock, Mail, ShieldAlert, ArrowRight, CheckCircle2, KeyRound, ShieldChec
 import SEO from '../../components/SEO';
 import Logo from '../../components/Logo';
 import AntiGravityCanvas from '../../components/AntiGravityCanvas';
-import { authService, DEV_CREDENTIALS } from '../../services/authService';
+import { authService } from '../../services/authService';
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
@@ -31,10 +31,6 @@ export default function AdminLogin() {
     }
   };
 
-  const handleFillDevCredentials = () => {
-    setEmail(DEV_CREDENTIALS.email);
-    setPassword(DEV_CREDENTIALS.password);
-  };
 
   return (
     <div className="min-h-screen bg-[#0a0f1d] flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans relative overflow-hidden">
@@ -125,26 +121,6 @@ export default function AdminLogin() {
               )}
             </button>
           </form>
-
-          {/* Development Testing Helper (Documented Safe Placeholder) */}
-          <div className="mt-8 pt-6 border-t border-slate-100">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider font-mono">
-                Development Credentials
-              </span>
-              <button
-                type="button"
-                onClick={handleFillDevCredentials}
-                className="text-[11px] font-bold text-emerald-700 hover:text-emerald-900 underline cursor-pointer"
-              >
-                Auto-fill
-              </button>
-            </div>
-            <div className="p-3 rounded-lg bg-slate-50 border border-slate-200 text-xs font-mono text-slate-600 space-y-1">
-              <div>Email: <span className="font-semibold text-slate-800">{DEV_CREDENTIALS.email}</span></div>
-              <div>Password: <span className="font-semibold text-slate-800">{DEV_CREDENTIALS.password}</span></div>
-            </div>
-          </div>
         </div>
 
         <div className="text-center mt-6">
