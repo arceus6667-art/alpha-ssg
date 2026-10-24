@@ -254,11 +254,12 @@ export default function Header() {
 
             <Link
               to="/admin/login"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-200 bg-white px-3 sm:px-4 py-2 text-xs font-bold text-emerald-800 shadow-sm transition-all hover:-translate-y-0.5 hover:border-emerald-400 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-600"
+              className="group relative inline-flex items-center gap-1.5 overflow-hidden rounded-xl bg-emerald-600 px-3 sm:px-4 py-2.5 text-xs font-bold text-white shadow-md shadow-emerald-600/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 motion-reduce:transform-none"
               aria-label="Admin login"
             >
-              <LogIn size={15} />
-              <span>Login</span>
+              <span aria-hidden="true" className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full motion-reduce:hidden" />
+              <LogIn size={15} className="relative transition-transform duration-300 group-hover:translate-x-0.5 motion-reduce:transform-none" />
+              <span className="relative">Login</span>
             </Link>
 
             {/* Mobile Hamburger Button */}
